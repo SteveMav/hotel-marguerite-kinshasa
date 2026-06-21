@@ -1,0 +1,7 @@
+/mailsender/
+/output/
+.playwright-cli/
+.server-pid
+*.pyc
+__pycache__/
+.env

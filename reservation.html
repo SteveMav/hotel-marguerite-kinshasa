@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Réservation & contact | Hotel Marguerite de Kinshasa</title>
+    <meta name="description" content="Proposition de page réservation pour Hotel Marguerite de Kinshasa avec message WhatsApp prérempli et contact direct.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="reservation">
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Navigation principale">
+        <a class="brand" href="index.html"><span class="brand-mark">HM</span><span><strong>Hotel Marguerite</strong><small>Kinshasa</small></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+        <div class="site-menu" id="site-menu">
+          <a href="index.html">Accueil</a>
+          <a href="chambres.html">Chambres</a>
+          <a href="sejour.html">Séjour</a>
+          <a href="reservation.html" aria-current="page">Réservation</a>
+          <button class="theme-toggle" type="button" aria-label="Changer le thème"><span class="theme-icon" aria-hidden="true"></span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="booking-band">
+        <div class="booking-copy reveal">
+          <p class="eyebrow">Contact direct</p>
+          <h1>Préparer une demande claire en quelques secondes.</h1>
+          <p>Le formulaire ne stocke aucune donnée. Il prépare simplement un message WhatsApp que le client peut relire avant envoi.</p>
+          <div class="contact-options">
+            <a class="contact-option" href="tel:+243998386650">
+              <strong>Appel</strong>
+              <span>+243 998 386 650</span>
+            </a>
+            <a class="contact-option" href="https://wa.me/243998386650" target="_blank" rel="noopener">
+              <strong>WhatsApp</strong>
+              <span>Écrire directement</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="booking-form">
+          <div class="field-group">
+            <label for="guest-name">Nom</label>
+            <input id="guest-name" name="guest-name" type="text" autocomplete="name" placeholder="Votre nom">
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label for="arrival">Arrivée</label>
+              <input id="arrival" name="arrival" type="date">
+            </div>
+            <div class="field-group">
+              <label for="nights">Nuits</label>
+              <input id="nights" name="nights" type="number" min="1" max="60" value="1">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label for="room-type">Chambre</label>
+              <select id="room-type" name="room-type">
+                <option value="Chambre Classique">Chambre Classique</option>
+                <option value="Chambre Confort">Chambre Confort</option>
+                <option value="Suite Familiale">Suite Familiale</option>
+                <option value="À conseiller">À conseiller</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="guests">Personnes</label>
+              <input id="guests" name="guests" type="number" min="1" max="12" value="1">
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="notes">Message</label>
+            <textarea id="notes" name="notes" rows="5" placeholder="Bonjour, je souhaite vérifier la disponibilité..."></textarea>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="button primary full-width" type="submit">Ouvrir WhatsApp</button>
+        </form>
+      </section>
+
+      <section class="address-band">
+        <div class="section-grid two-columns">
+          <div class="body-stack reveal">
+            <p class="eyebrow">Adresse</p>
+            <h2>Avenue Kabinda N°62, Commune de Kinshasa.</h2>
+            <p>Cette adresse est utilisée dans la proposition parce qu'elle apparaît dans une fiche publique. Avant publication officielle, elle devrait être confirmée avec la direction et alignée avec les cartes et annuaires.</p>
+          </div>
+          <figure class="map-visual reveal">
+            <img src="images/hotel-marguerite-map-mood.png" alt="Carte stylisée avec repère d'adresse">
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">HM</span><span><strong>Hotel Marguerite</strong><small>Proposition non officielle</small></span></a><p>Démo de prospection créée pour proposer une future vitrine officielle à l'hôtel.</p></div>
+        <div><h2>Navigation</h2><a href="index.html">Accueil</a><a href="chambres.html">Chambres</a><a href="sejour.html">Séjour</a></div>
+        <div><h2>Contact public</h2><a href="tel:+243998386650">+243 998 386 650</a><span>Avenue Kabinda N°62, C/Kinshasa</span><small>Adresse à confirmer avant publication officielle.</small></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
